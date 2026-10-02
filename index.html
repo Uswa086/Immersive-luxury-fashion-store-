@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#11100e">
+  <title>Immersive Luxury Fashion Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="announcement">
+    LUXURY UNSTITCHED FABRICS · ELEGANCE IN EVERY THREAD
+  </div>
+
+  <header class="header">
+    <a href="#home" class="logo">
+      <span class="logo-mark">U</span>
+      <span>IMMERSIVE <small>LUXURY FASHION STORE</small></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+    <nav id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#ladies">Ladies</a>
+      <a href="#gents">Gents</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#collection" class="header-btn">EXPLORE ↗</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">THE ART OF LUXURY FABRICS</p>
+        <h1>Style that feels<br><em>extraordinary.</em></h1>
+        <p class="hero-description">
+          Discover beautiful unstitched fabrics, timeless colours
+          and a luxury shopping experience created for you.
+        </p>
+        <div class="hero-actions">
+          <a href="#collection" class="btn btn-gold">Explore Collection ↗</a>
+          <a href="#about" class="btn btn-outline">Our Story</a>
+        </div>
+        <div class="hero-note">
+          <span>✦</span> Ladies & Gents Unstitched Collection
+        </div>
+      </div>
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1100&q=85"
+          alt="Luxury fashion fabric display"
+        >
+        <div class="image-caption">
+          <span>THE LUXURY EDIT</span>
+          <strong>Elegance, Unfolded.</strong>
+        </div>
+        <div class="round-stamp">LUXURY<br>IN EVERY<br>THREAD ✦</div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div>✦ Carefully Selected Fabrics</div>
+      <div>✦ Order Directly on WhatsApp</div>
+      <div>✦ Cash on Delivery Available</div>
+    </section>
+
+    <section class="section collection-section" id="collection">
+      <div class="section-heading">
+        <p class="eyebrow">CURATED FOR YOUR STYLE</p>
+        <h2>Discover the <em>Collection</em></h2>
+        <p>Explore colours and fabrics selected for your wardrobe.</p>
+      </div>
+
+      <div class="filters">
+        <button class="filter active" data-filter="all">All Fabrics</button>
+        <button class="filter" data-filter="ladies">Ladies</button>
+        <button class="filter" data-filter="gents">Gents</button>
+        <select id="sortProducts" aria-label="Sort products">
+          <option value="featured">Featured</option>
+          <option value="low">Price: Low to High</option>
+          <option value="high">Price: High to Low</option>
+        </select>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="editorial">
+      <div class="editorial-image">
+        <img
+          src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1000&q=85"
+          alt="Elegant fashion editorial"
+          loading="lazy"
+        >
+      </div>
+      <div class="editorial-content">
+        <p class="eyebrow">MADE FOR YOUR IMAGINATION</p>
+        <h2>Your fabric.<br><em>Your signature.</em></h2>
+        <p>
+          From everyday comfort to special occasions, find unstitched
+          fabrics that let you create a style that is truly your own.
+          Choose your favourite colour, select your fabric and place
+          your order directly with us.
+        </p>
+        <a class="text-link" href="#collection">Find Your Fabric ↗</a>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">A LITTLE ABOUT US</p>
+        <h2>Welcome to <em>Our World</em></h2>
+      </div>
+      <div class="about-card">
+        <div class="about-symbol">U.</div>
+        <div>
+          <h3>About Immersive Luxury Fashion Store</h3>
+          <p>
+            We bring ladies' and gents' unstitched fabrics together
+            in one place, with a focus on beautiful colours, thoughtful
+            selection and a convenient shopping experience. Whether
+            you love classic cotton, printed lawn or elegant wash and
+            wear, our collection helps you find fabric for your own style.
+          </p>
+          <p>
+            Our goal is to make choosing and ordering fabrics simple.
+            Browse the collection, check the listed price, and contact
+            us directly on WhatsApp or email to confirm your order.
+          </p>
+          <span class="about-location">KHANEWAL · KACHA KHU, PAKISTAN</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="values">
+      <div><span>01</span><h3>Curated Colours</h3><p>Explore a range of classic and modern shades.</p></div>
+      <div><span>02</span><h3>Personal Choice</h3><p>Unstitched fabrics for your own designs.</p></div>
+      <div><span>03</span><h3>Direct Ordering</h3><p>Contact us to confirm fabric availability and delivery.</p></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-inner">
+        <p class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</p>
+        <h2>Your next favourite fabric<br><em>is waiting.</em></h2>
+        <p>Ask about colours, prices, availability or placing an order.</p>
+
+        <div class="contact-buttons">
+          <a class="contact-btn whatsapp"
+             href="https://wa.me/923157540218"
+             target="_blank" rel="noopener">
+            <span>☏</span>
+            <span><small>CHAT & ORDER ON</small><strong>WhatsApp</strong></span>
+          </a>
+
+          <a class="contact-btn email"
+             href="mailto:uswanazish311@gmail.com?subject=Fabric%20Enquiry">
+            <span>✉</span>
+            <span><small>SEND US AN</small><strong>Email</strong></span>
+          </a>
+        </div>
+
+        <div class="contact-details">
+          <p><span>WhatsApp</span> +92 315 7540218</p>
+          <p><span>Email</span> uswanazish311@gmail.com</p>
+          <p><span>Location</span> Khanewal, Kacha Khu, Pakistan</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="footer-logo">IMMERSIVE <em>LUXURY</em></a>
+    <p>Timeless fabrics. Beautiful possibilities.</p>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#collection">Collection</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p class="copyright">© <span id="year"></span> Immersive Luxury Fashion Store. All rights reserved.</p>
+  </footer>
+
+  <a class="floating-whatsapp"
+     href="https://wa.me/923157540218"
+     target="_blank" rel="noopener"
+     aria-label="Contact us on WhatsApp">☏</a>
+
+  <script src="script.js"></script>
+</body>
+        </html>
+        
